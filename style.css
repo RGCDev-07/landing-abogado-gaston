@@ -34,7 +34,7 @@ body {
 
 .nav-left {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin-left: 20px;
 }
 
@@ -69,20 +69,21 @@ body {
 
 /* SECCIONES */
 .seccion {
-  padding: 80px 20px 60px 20px;
-  max-width: 800px;
+  padding: 100px 20px 80px 20px;
+  max-width: 850px;
   margin: 0 auto;
   text-align: center;
 }
 
-.espacio-contacto {
-  padding-top: 170px; /* Más espacio entre áreas y contacto */
-}
-
 .seccion h2 {
   color: #ff704d;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.seccion p, .seccion ul {
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .seccion ul {
@@ -92,7 +93,6 @@ body {
 
 .seccion li {
   margin: 10px 0;
-  font-size: 1.1rem;
 }
 
 /* BOTÓN WHATSAPP */
@@ -111,6 +111,11 @@ body {
   background-color: #1ebc5b;
 }
 
+/* ESPACIADO CONTACTO */
+.espacio-contacto {
+  padding-top: 170px;
+}
+
 /* FOOTER */
 footer {
   background-color: #222;
@@ -125,17 +130,32 @@ footer {
   .hero-texto h1 {
     font-size: 2.5rem;
   }
+
   .hero-texto p {
     font-size: 1.2rem;
   }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px;
   }
+
   .nav-left {
     flex-direction: column;
     gap: 10px;
     margin-left: 0;
+  }
+
+  .seccion {
+    padding: 80px 15px;
+  }
+
+  .seccion h2 {
+    font-size: 1.8rem;
+  }
+
+  .seccion p, .seccion ul {
+    font-size: 1.1rem;
   }
 }
