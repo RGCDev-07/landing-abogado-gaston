@@ -127,39 +127,53 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero {
-    background-position: center top; /* Enfoca parte superior de la imagen */
-  }
-
-  .hero-texto h1 {
-    font-size: 2.3rem;
-  }
-
-  .hero-texto p {
-    font-size: 1.1rem;
-  }
-
-  .nav {
+  header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
   }
 
-  .nav-left {
+  nav {
     flex-direction: column;
     gap: 10px;
-    margin-left: 0;
   }
 
-  .seccion {
-    padding: 90px 15px 70px 15px;
+  section {
+    padding-top: 80px;
+    padding-bottom: 60px;
   }
 
-  .seccion h2 {
-    font-size: 1.8rem;
+  #inicio {
+    background-position: center top; /* centra la estatua en celular */
+    background-size: cover;
   }
 
-  .seccion p, .seccion ul {
-    font-size: 1.1rem;
+  #inicio h1 {
+    font-size: 2em;
+  }
+
+  #inicio p {
+    font-size: 1.2em;
+  }
+
+  #informacion,
+  #areas,
+  #contacto {
+    margin-bottom: 50px;
+  }
+
+  #informacion h2,
+  #areas h2,
+  #contacto h2 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
+  #contacto p {
+    font-size: 1em;
+  }
+
+  .boton-wpp {
+    padding: 12px 25px;
+    font-size: 1em;
   }
 }
