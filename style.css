@@ -8,7 +8,7 @@ body {
 
 /* HERO - Imagen de fondo */
 .hero {
-  background-image: url('images/librosbalanza.jpeg');
+  background-image: url('Images/librosbalanza.jpeg'); /* Respetando mayúscula */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ body {
 
 /* SECCIONES */
 .seccion {
-  padding: 100px 20px 80px 20px;
+  padding: 130px 20px 110px 20px;
   max-width: 850px;
   margin: 0 auto;
   text-align: center;
@@ -113,7 +113,7 @@ body {
 
 /* ESPACIADO CONTACTO */
 .espacio-contacto {
-  padding-top: 170px;
+  padding-top: 120px;
 }
 
 /* FOOTER */
