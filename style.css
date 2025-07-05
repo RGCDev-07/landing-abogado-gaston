@@ -134,45 +134,46 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero {
-    background-position: center 85%;
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .nav {
+  header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 20px;
+    padding-left: 10px;
   }
 
-  .nav-left {
+  nav {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     gap: 8px;
-    margin-left: 0;
-    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* barra negra translúcida */
+    padding: 10px 15px;
   }
 
-  .nav-link {
-    font-size: 16px;
-    padding: 6px 0;
-    width: 100%;
-    text-align: left;
+  nav a {
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 5px 0;
   }
 
-  .hero-texto h1 {
-    font-size: 2.5rem;
+  .hero {
+    background-image: url('images/librosbalanza.jpeg');
+    background-position: 85% center;  /* centrado justo para la estatua */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
-  .hero-texto p {
-    font-size: 1.2rem;
-  }
-
-  .seccion {
-    padding: 100px 20px 100px 20px; /* ↑ Aumenté el espacio inferior */
-  }
-
-  .espacio-contacto {
-    padding-top: 170px;
+  section {
+    padding-top: 120px;  /* asegura que el contenido no quede tapado por la barra */
+    padding-bottom: 80px;
   }
 }
