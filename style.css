@@ -128,52 +128,38 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 10px;
+    text-align: left;
   }
 
-  nav {
+  nav ul {
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
   }
 
-  section {
-    padding-top: 80px;
-    padding-bottom: 60px;
+  nav ul li {
+    margin: 0;
+    padding: 5px 0;
   }
 
   #inicio {
-    background-position: center top; /* centra la estatua en celular */
+    background-position: right center;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
-  #inicio h1 {
-    font-size: 2em;
+  section {
+    padding: 30px 15px;
+    font-size: 1.1em;
   }
 
-  #inicio p {
-    font-size: 1.2em;
+  h2 {
+    font-size: 1.8em;
   }
 
-  #informacion,
-  #areas,
-  #contacto {
-    margin-bottom: 50px;
-  }
-
-  #informacion h2,
-  #areas h2,
-  #contacto h2 {
-    font-size: 1.5em;
-    margin-top: 30px;
-  }
-
-  #contacto p {
+  p {
     font-size: 1em;
-  }
-
-  .boton-wpp {
-    padding: 12px 25px;
-    font-size: 1em;
+    line-height: 1.5em;
   }
 }
