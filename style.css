@@ -144,13 +144,13 @@ footer {
 
   nav a {
     font-size: 12px;
-    margin: 5px 0;
-    padding: 5px 0;
+    margin: 3px 0;
+    padding: 3px 0;
   }
 
   .hero {
     background-image: url('images/librosbalanza.jpeg');
-    background-position: 60% center; /* Mover más a la derecha */
+    background-position: 75% center; /* Mover más a la derecha */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
