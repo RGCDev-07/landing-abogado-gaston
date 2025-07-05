@@ -1,111 +1,116 @@
 /* ================== RESETEO GENERAL ================== */
 * {
   margin: 0; /* Elimina márgenes por defecto del navegador */
-  padding: 0; /* Elimina padding por defecto del navegador */
-  box-sizing: border-box; /* Asegura que el padding y borde no agranden los elementos */
+  padding: 0; /* Elimina espacio interno por defecto */
+  box-sizing: border-box; /* Incluye padding y borde dentro del tamaño total del elemento */
 }
 
 /* ================== CUERPO GENERAL ================== */
 body {
-  font-family: 'Playfair Display', serif; /* Fuente elegante para todo el sitio */
-  background-color: #111; /* Fondo negro profundo */
+  font-family: 'Playfair Display', serif; /* Fuente elegante */
+  background-color: #111; /* Fondo negro */
   color: white; /* Texto blanco en todo el sitio */
-  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en los botones del menú */
+  scroll-behavior: smooth; /* Hace que el scroll sea suave al tocar los botones del menú */
 }
 
 /* ================== MENÚ DE NAVEGACIÓN (barra superior) ================== */
 .nav {
-  display: flex; /* Distribuye los botones del menú en una fila */
+  display: flex; /* Organiza los botones en fila */
   justify-content: flex-start; /* Alinea los botones a la izquierda */
-  padding: 20px; /* Espaciado interno del menú */
-  position: fixed; /* Mantiene el menú siempre arriba aunque se haga scroll */
+  padding: 20px; /* Espaciado interior del menú */
+  position: fixed; /* Hace que el menú quede siempre arriba */
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con transparencia */
   width: 100%; /* Que abarque toda la pantalla */
-  z-index: 1000; /* Para que quede por encima de todo */
+  z-index: 1000; /* Se asegura de que esté por encima de todos los elementos */
 }
 
 .nav-left {
-  display: flex; /* Distribuye los enlaces en línea */
+  display: flex; /* Distribuye los botones en fila */
   gap: 25px; /* Espacio entre cada botón */
   margin-left: 20px; /* Separación del borde izquierdo */
 }
 
 .nav-link {
-  color: white; /* Color del texto de los botones */
+  color: white; /* Color del texto */
   text-decoration: none; /* Sin subrayado */
   font-size: 16px; /* Tamaño del texto */
-  font-weight: 500; /* Grosor medio del texto */
+  font-weight: 500; /* Peso medio del texto */
 }
 
 .nav-link:hover {
   text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
-/* ================== SECCIÓN HERO (imagen de fondo grande) ================== */
+/* ================== SECCIÓN HERO (imagen de fondo) ================== */
 .hero {
   background-image: url('Images/librosbalanza.jpeg'); /* Imagen de fondo (respetar mayúsculas en carpeta y nombre) */
-  background-size: cover; /* Que cubra toda la pantalla */
+  background-size: cover; /* La imagen cubre toda el área */
   background-position: center; /* Centrada horizontal y verticalmente */
   background-repeat: no-repeat; /* No repetir la imagen */
-  height: 100vh; /* Alto igual al de la pantalla */
-  display: flex; /* Permite alinear el texto internamente */
-  flex-direction: column; /* Organiza texto uno debajo del otro */
-  justify-content: center; /* Centra el contenido verticalmente */
-  position: relative; /* Permite usar posicionamiento relativo si se quiere agregar algo sobre la imagen */
-  padding-top: 80px; /* Espacio extra arriba para que el texto no quede tapado por el menú */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex; /* Permite centrar el contenido internamente */
+  flex-direction: column; /* Organiza el contenido en columna */
+  justify-content: center; /* Centra verticalmente */
+  position: relative;
+  padding-top: 80px; /* Espacio para que el menú no tape el texto */
 }
 
 /* Texto dentro de la imagen */
 .hero-texto {
-  text-align: center; /* Centrado horizontal */
-  color: white; /* Color del texto */
+  text-align: center; /* Texto centrado horizontalmente */
+  color: white;
 }
 
 .hero-texto h1 {
-  font-size: 3.5rem; /* Tamaño grande para el nombre */
+  font-size: 3.5rem; /* Tamaño grande del título */
   margin: 0;
-  font-weight: 700; /* Negrita */
+  font-weight: 700;
 }
 
 .hero-texto p {
-  font-size: 1.5rem; /* Subtítulo */
+  font-size: 1.5rem; /* Tamaño del subtítulo */
   margin-top: 10px;
 }
 
-/* ================== SECCIONES DE CONTENIDO ================== */
+/* ================== SECCIONES DE CONTENIDO (información, áreas, contacto) ================== */
 .seccion {
-  padding: 120px 20px 100px 20px; /* Espaciado (top, lados, abajo) */
+  padding: 120px 20px 100px 20px; /* Espaciado (arriba, lados, abajo) */
   max-width: 850px; /* Ancho máximo del contenido */
   margin: 0 auto; /* Centrado horizontal */
-  text-align: center; /* Texto centrado */
+  text-align: center; /* Centrado del texto */
+  min-height: 100vh; /* Ocupa toda la pantalla para que no se mezcle con otra sección */
+  display: flex; /* Permite centrar el texto en el medio */
+  flex-direction: column;
+  justify-content: center; /* Centrado vertical */
 }
 
 .seccion h2 {
-  color: #ff704d; /* Naranja elegante para los títulos */
+  color: #ff704d; /* Color naranja para los títulos */
   font-size: 2.2rem; /* Tamaño del título */
-  margin-bottom: 25px; /* Separación con el párrafo siguiente */
+  margin-bottom: 25px;
 }
 
-.seccion p, .seccion ul {
+.seccion p,
+.seccion ul {
   font-size: 1.25rem; /* Tamaño del texto */
-  line-height: 1.6; /* Espaciado entre renglones */
+  line-height: 1.6; /* Espacio entre líneas */
 }
 
 .seccion ul {
-  list-style-type: none; /* Elimina los puntitos de la lista */
+  list-style-type: none; /* Quita los puntitos de la lista */
   padding: 0;
 }
 
 .seccion li {
-  margin: 10px 0; /* Espacio entre ítems de la lista */
+  margin: 10px 0; /* Espacio entre cada ítem de la lista */
 }
 
 /* ================== BOTÓN WHATSAPP ================== */
 .btn-wsp {
   display: inline-block;
-  background-color: #25D366; /* Verde característico de WhatsApp */
+  background-color: #25D366; /* Verde de WhatsApp */
   color: black;
   padding: 12px 20px; /* Tamaño del botón */
   border-radius: 5px; /* Bordes redondeados */
@@ -115,62 +120,62 @@ body {
 }
 
 .btn-wsp:hover {
-  background-color: #1ebc5b; /* Color más oscuro al pasar el mouse */
+  background-color: #1ebc5b; /* Verde más oscuro al pasar el mouse */
 }
 
-/* ================== ESPACIADO EXTRA EN LA SECCIÓN DE CONTACTO ================== */
+/* ================== ESPACIADO EXTRA PARA CONTACTO ================== */
 .espacio-contacto {
-  padding-top: 150px; /* Más espacio arriba */
+  padding-top: 150px; /* Espacio extra arriba */
   padding-bottom: 100px;
 }
 
-/* ================== PIE DE PÁGINA ================== */
+/* ================== PIE DE PÁGINA (footer) ================== */
 footer {
   background-color: #222; /* Fondo gris oscuro */
   color: white;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem; /* Letra un poco más chica */
+  font-size: 0.9rem; /* Tamaño del texto más chico */
 }
 
-/* ================== VERSIÓN PARA CELULAR ================== */
+/* ================== DISEÑO RESPONSIVO PARA CELULAR ================== */
 @media screen and (max-width: 768px) {
-  /* MENÚ en celular */
+  /* MENÚ en pantallas pequeñas */
   .nav {
-    flex-direction: column; /* Apila los botones uno debajo del otro */
+    flex-direction: column; /* Los botones se apilan uno debajo del otro */
     align-items: flex-start; /* Alineados a la izquierda */
     padding: 10px 15px;
-    gap: 10px;
+    gap: 10px; /* Espacio entre los botones */
   }
 
   .nav a {
-    font-size: 14px; /* Letra un poco más chica */
-    margin: 5px 0; /* Espacio entre botones */
+    font-size: 14px; /* Tamaño más chico en celular */
+    margin: 5px 0;
   }
 
   /* HERO en celular */
   .hero {
-    background-image: url('Images/librosbalanza.jpeg'); /* Imagen respetando mayúsculas */
-    background-position: 85% center; /* Ajustado para que la estatua esté centrada */
+    background-image: url('Images/librosbalanza.jpeg'); /* Imagen de fondo (misma que escritorio) */
+    background-position: 85% center; /* Ajustado para que se vea centrada la estatua */
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
+    background-attachment: fixed; /* Fija la imagen al hacer scroll */
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 100px; /* Espacio para que el menú no tape el texto */
   }
 
-  /* Texto dentro del HERO en celular */
   .hero-texto h1 {
-    font-size: 2.2rem; /* Más chico para pantallas pequeñas */
+    font-size: 2.2rem; /* Título más chico en celular */
   }
 
   .hero-texto p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Subtítulo más chico */
   }
 
   /* SECCIONES en celular */
   .seccion {
-    padding-top: 140px; /* Más espacio arriba para que no lo tape el menú */
+    padding-top: 140px; /* Más espacio para no ser tapado por el menú */
     padding-bottom: 80px;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
   }
 }
