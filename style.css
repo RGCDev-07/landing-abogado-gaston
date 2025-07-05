@@ -135,6 +135,10 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .hero {
+    background-position: center 85%;
+  }
+
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -143,14 +147,17 @@ footer {
 
   .nav-left {
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 8px;
     margin-left: 0;
     width: 100%;
   }
 
   .nav-link {
     font-size: 16px;
-    padding: 8px 0;
+    padding: 6px 0;
+    width: 100%;
+    text-align: left;
   }
 
   .hero-texto h1 {
@@ -162,15 +169,10 @@ footer {
   }
 
   .seccion {
-    padding: 80px 15px;
+    padding: 100px 20px 100px 20px; /* ↑ Aumenté el espacio inferior */
   }
 
-  .seccion h2 {
-    font-size: 1.8rem;
-  }
-
-  .seccion p,
-  .seccion ul {
-    font-size: 1.1rem;
+  .espacio-contacto {
+    padding-top: 170px;
   }
 }
